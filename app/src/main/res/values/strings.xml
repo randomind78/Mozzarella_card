@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mozzarella_card</string>
+    <string name="business_name_text">Muuzzarella lounge</string>
+    <string name="description_text">Located in the city center, it\'s a typical neapolitan restaurant, serving dishes with mozzarella</string>
+    <string name="address_text"><a href="https://goo.gl/maps/iBektSG3Hmy"> Vico II Alabardieri, 7 - Napoli</a></string>
+    <string name="phone_number_text">081 40 53 70</string>
+    <string name="email_text">info@muumuuzzarellalounge.it</string>
+    <string name="opening_hours_text">Tuesday to Sunday: 12-16 and 19-24</string>
+    <string name="website_text">www.muumuuzzarellalounge.it</string>
+</resources>
+
