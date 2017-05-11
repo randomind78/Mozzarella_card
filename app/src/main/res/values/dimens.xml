@@ -12,7 +12,7 @@
     <dimen name="description_marginLeft">10dp</dimen>
     <dimen name="description_marginRight">10dp</dimen>
     <dimen name="description_marginBottom">6dp</dimen>
-        <!--Business information-->
+    <!--Business information-->
     <dimen name="business_information_textSize">15sp</dimen>
     <dimen name="business_information_marginLeft">10dp</dimen>
     <dimen name="business_information_marginBottom">6dp</dimen>
