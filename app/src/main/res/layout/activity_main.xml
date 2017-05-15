@@ -1,112 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.marconota.mozzarella_card.MainActivity">
 
-    <ImageView
+
+    <RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
         android:id="@+id/muuzzarella_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/muuzzarella_imageview"
-        android:scaleType="fitStart"
         android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/muuzzarella_imageview"
         />
+
 
     <ImageView
         android:id="@+id/dishes_bar"
-        android:src="@drawable/dishes_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/muuzzarella_imageview"
         android:adjustViewBounds="true"
+        android:src="@drawable/dishes_bar"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_muuzzarella"
-        android:layout_marginTop="@dimen/Logo_marginTop"
         android:layout_marginLeft="@dimen/Logo_marginLeft"
+        android:layout_marginTop="@dimen/Logo_marginTop"
+        android:src="@drawable/logo_muuzzarella"
         />
-    <TextView
+
+
+        <TextView
         android:id="@+id/muuzzarella_lounge_text"
+            style="@style/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/dishes_bar"
         android:text="@string/business_name_text"
         android:textStyle="bold"
-        style="@style/title"
         />
     <TextView
         android:id="@+id/description_text"
+        style="@style/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/muuzzarella_lounge_text"
         android:text="@string/description_text"
-        style="@style/description"
         />
 
 
     <TextView
         android:id="@+id/address"
+        style="@style/business_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/description_text"
+        android:drawableLeft="@drawable/address_icon"
+        android:linksClickable="true"
         android:text="@string/address_text"
         android:textSize="@dimen/business_information_textSize"
-        android:linksClickable="true"
-        android:drawableLeft="@drawable/address_icon"
-        style="@style/business_information"
         />
     <TextView
         android:id="@+id/phone_number"
+        style="@style/business_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/address"
-        android:text="@string/phone_number_text"
-        android:textSize="@dimen/business_information_textSize"
         android:autoLink="all"
-        android:linksClickable="true"
-        android:textColorLink="@color/links_color"
         android:drawableLeft="@drawable/phone_icon"
-        style="@style/business_information"
+        android:linksClickable="true"
+        android:text="@string/phone_number_text"
+        android:textColorLink="@color/links_color"
+        android:textSize="@dimen/business_information_textSize"
         />
     <TextView
         android:id="@+id/email_text"
+        style="@style/business_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/phone_number"
-        android:text="@string/email_text"
         android:autoLink="all"
-        android:linksClickable="true"
-        android:textColorLink="@color/links_color"
         android:drawableLeft="@drawable/email_icon"
-        style="@style/business_information"
+        android:linksClickable="true"
+        android:text="@string/email_text"
+        android:textColorLink="@color/links_color"
         />
 
     <TextView
         android:id="@+id/opening_hours_text"
+        style="@style/business_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/email_text"
-        android:text="@string/opening_hours_text"
         android:drawableLeft="@drawable/hours_icon"
-        style="@style/business_information"
+        android:text="@string/opening_hours_text"
         />
     <TextView
         android:id="@+id/website_text"
+        style="@style/business_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/opening_hours_text"
-        android:text="@string/website_text"
         android:autoLink="all"
-        android:linksClickable="true"
-        android:textColorLink="@color/links_color"
         android:drawableLeft="@drawable/website_icon"
-        style="@style/business_information"
+        android:linksClickable="true"
+        android:text="@string/website_text"
+        android:textColorLink="@color/links_color"
         />
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
